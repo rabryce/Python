@@ -1,12 +1,12 @@
-def print_numbers():
-    print(1)
-    print(2)
-    print(3)
-
+def print_numbers(print_to_num):
+    for i in range(print_to_num):
+        print(i)
 
 def main():
-    # print('hello world')
-    print_numbers()
+    print_numbers(get_number_to_print)
+
+def get_number_to_print():
+    return 4
 
 if __name__ == '__main__':
     main()
